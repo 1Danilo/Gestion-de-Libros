@@ -96,6 +96,36 @@ Este proyecto es una aplicación web que permite a los usuarios registrarse, ini
 
 ### Backend
 
-1. **Instalar Dependencias:**
-   ```bash
-   pip install -r requirements.txt
+Asegúrate de tener instalados los siguientes paquetes:
+
+- FastAPI
+- Uvicorn
+- SQLAlchemy
+- psycopg2 (o psycopg2-binary)
+- passlib
+- Otros paquetes necesarios
+
+**Instalar Dependencias:**
+
+```bash
+pip install -r requirements.txt
+
+**Ejecutar el Servidor:**
+
+```bash
+uvicorn main:app --reload
+
+
+### Frontend
+
+**Instalar Dependencias:**
+
+Navega a la carpeta del "frontend" y ejecuta:
+
+npm install
+
+Ejecutar el Servidor de Desarrollo:
+
+npm run dev
+
+
