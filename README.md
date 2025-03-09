@@ -92,13 +92,27 @@ Este proyecto es una aplicación web que permite a los usuarios registrarse, ini
 
 ---
 
+# Cómo Ejecutar el Proyecto 🚀
 
-## Cómo Ejecutar el Proyecto 🚀
+**🚨 Advertencia:**  
+Antes de abrir una nueva terminal para el Frontend, es necesario configurar VSCode para ejecutar el Backend y el Frontend juntos sin interrupciones. Sigue estos pasos:
 
-### Backend 🔙
+---
+
+## Configuración en VSCode
+
+1. **Descargar/Clonar el Proyecto:**  
+   Clona o descarga la carpeta completa llamada `Gestion-de-Libros-main`. 📂
+
+2. **Agregar la Carpeta del Frontend al Workspace:**  
+   - Abre VSCode y en la parte superior selecciona **File** (o **Archivos**) > **Add Folder to Workspace...**  
+   - Se abrirá el administrador de archivos. Selecciona la carpeta `frontend`. 📁
+
+---
+
+## Ejecución del Backend 🔙
 
 Asegúrate de tener instalados los siguientes paquetes:
-
 - FastAPI
 - Uvicorn
 - SQLAlchemy
@@ -110,6 +124,7 @@ Asegúrate de tener instalados los siguientes paquetes:
 
 ```bash
 pip install -r requirements.txt
+
 ```
 
 **Ejecutar el Servidor:**
@@ -117,7 +132,9 @@ pip install -r requirements.txt
 ```bash
 uvicorn main:app --reload
 ```
+
 ### Frontend 🔜
+
 
 **Instalar Dependencias:**
 
