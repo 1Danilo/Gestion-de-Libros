@@ -95,7 +95,7 @@ Este proyecto es una aplicación web que permite a los usuarios registrarse, ini
 
 ## Cómo Ejecutar el Proyecto 🚀
 
-### Backend
+### Backend 🔙
 
 Asegúrate de tener instalados los siguientes paquetes:
 
@@ -117,7 +117,7 @@ pip install -r requirements.txt
 ```bash
 uvicorn main:app --reload
 ```
-### Frontend
+### Frontend 🔜
 
 **Instalar Dependencias:**
 
