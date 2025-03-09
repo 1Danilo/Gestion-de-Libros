@@ -3,7 +3,7 @@
 Este proyecto es una aplicación web que permite a los usuarios registrarse, iniciar sesión y gestionar una colección de libros. La aplicación se divide en dos partes principales:
 
 - **Frontend:** Desarrollado en React con Material UI, utiliza Context API para gestionar el estado de autenticación, React Router para la navegación y Axios para comunicarse con el backend. ⚛️🎨
-- **Backend:** Implementado con FastAPI y PostgreSQL (o SQLite para pruebas), utiliza SQLAlchemy para interactuar con la base de datos y Pydantic para la validación de datos. Se incluyen operaciones CRUD para usuarios y libros, junto con la funcionalidad de login y filtrado de libros por usuario autenticado. 🚀💾
+- **Backend:** Implementado con FastAPI y SQLite (ideal para desarrollo y pruebas), utiliza SQLAlchemy para interactuar con la base de datos y Pydantic para la validación de datos. Se incluyen operaciones CRUD para usuarios y libros, junto con la funcionalidad de login y filtrado de libros por usuario autenticado. 🚀💾
 
 ---
 
@@ -46,7 +46,7 @@ Este proyecto es una aplicación web que permite a los usuarios registrarse, ini
 
 ### Backend
 - **FastAPI** para la creación de APIs REST.
-- **PostgreSQL** para almacenar la información (se puede usar SQLite en desarrollo).
+- **SQLite** para almacenar la información (ideal para desarrollo y pruebas).
 - **SQLAlchemy** para la interacción con la base de datos.
 - **Pydantic** para la validación y serialización de datos.
 - Las contraseñas se almacenan de forma segura utilizando técnicas de hashing (bcrypt).
@@ -56,11 +56,12 @@ Este proyecto es una aplicación web que permite a los usuarios registrarse, ini
 ## Arquitectura y Funcionalidades del Backend 🔙
 
 ### Base de Datos
+- Se crea una base de datos con **SQLite** (archivo `libros.db`).
 - Se crean dos tablas: **Usuarios** y **Libros**.
-- **Usuarios:**  
-  Contiene campos: `nombre`, `email` (usado como login) y `hashed_password`.
-- **Libros:**  
-  Contiene campos: `nombre`, `descripcion` y `propietario_id`, estableciendo una relación de uno a muchos (un usuario puede tener varios libros).
+  - **Usuarios:**  
+    Contiene campos: `nombre`, `email` (usado como login) y `hashed_password`.
+  - **Libros:**  
+    Contiene campos: `nombre`, `descripcion` y `propietario_id`, estableciendo una relación de uno a muchos (un usuario puede tener varios libros).
 
 ### Modelos y Esquemas
 - Se definen modelos de SQLAlchemy en `models.py` para reflejar la estructura de la base de datos.
